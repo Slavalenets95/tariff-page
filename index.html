@@ -13,28 +13,32 @@
 
 <body class="body">
     <div class="opacity hidden"></div>
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col d-flex align-items-center">
-                    <a href="#" class="header__logo">
-                        <picture>
-                            <source srcset="./img/logo-md.svg" media="(min-width: 568px)">
-                            <img src="./img/logo-sm.svg" alt="Some picture">
-                        </picture>
-                    </a>
-                    <h1 class="header__title title min-768-visible">Личный кабинет</h1>
-                    <div class="header__ui d-flex align-items-center ml-auto">
-                        <button class="header__btn btn-sm btn min-768-visible" type="button">Помощь</button>
-                        <img src="./img/avatar-img.png" alt="avatar" class="header__avatar">
-                        <button class="header__menu max-768-visible"></button>
-                    </div>
+    <mainheader><header class="header">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col d-flex align-items-center">
+                <a href="#" class="header__logo">
+                    <picture>
+                        <source srcset="./img/logo-md.svg" media="(min-width: 568px)">
+                        <img src="./img/logo-sm.svg" alt="Some picture">
+                    </picture>
+                </a>
+                <h1 class="header__title title min-768-visible">Личный кабинет</h1>
+                <div class="header__ui d-flex align-items-center ml-auto">
+                    <button class="header__btn btn-sm btn min-768-visible" type="button">Помощь</button>
+                    <img src="./img/avatar-img.png" alt="avatar" class="header__avatar">
+                    <button class="header__menu max-768-visible">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header></mainheader>
     <section class="content d-flex">
-        <div class="sidebar sidebar-hidden" data-folded="false">
+        <sidebar><div class="sidebar sidebar-hidden" data-folded="false">
             <div class="container-fluid">
                 <div class="row no-gutters">
                     <div class="col be-static">
@@ -50,7 +54,7 @@
                                     </a>
                                 </li>
                                 <li class="nav__list-item">
-                                    <a href="#" class="nav__list-link nav__list-link--active rate">
+                                    <a href="#" class="nav__list-link rate">
                                         <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="nav__list-svg" d="M22.4389 12.5856L22.4389 12.5856C22.8316 12.9786 23.0482 13.5012 23.0477 14.0567M22.4389 12.5856L22.8977 14.0565M22.4389 12.5856C22.0461 12.1928 21.5232 11.9762 20.9676 11.9762C20.9654 11.9762 20.9592 11.9762 20.9517 11.9766M22.4389 12.5856L22.3328 12.6916C21.9682 12.327 21.4834 12.1262 20.9676 12.1262C20.964 12.1262 20.9604 12.1262 20.9568 12.1265M23.0477 14.0567L22.8977 14.0565M23.0477 14.0567V14.0565H22.8977M23.0477 14.0567V15.5618C23.0477 15.8586 22.8069 16.0994 22.5101 16.0994H22.4017M22.8977 14.0565V15.5618C22.8977 15.7757 22.724 15.9494 22.5101 15.9494H22.4017V16.0994M22.4017 16.0994H22.2517V17.1176C22.2517 17.3316 22.078 17.5052 21.8641 17.5052H16.5916V17.6552M22.4017 16.0994V17.1176C22.4017 17.4144 22.1609 17.6552 21.8641 17.6552H16.5916M16.5916 17.6552H16.4416V20.3415C16.4416 20.5555 16.268 20.7291 16.054 20.7291H1.38761C1.17339 20.7291 1 20.5555 1 20.3415V1.38761C1 1.17339 1.17339 1 1.38761 1H16.054C16.268 1 16.4416 1.17339 16.4416 1.38761V4.23061M16.5916 17.6552V20.3415C16.5916 20.6383 16.3508 20.8791 16.054 20.8791H1.38761C1.09048 20.8791 0.85 20.6383 0.85 20.3415V1.38761C0.85 1.09055 1.09055 0.85 1.38761 0.85H16.054C16.3508 0.85 16.5916 1.09048 16.5916 1.38761V4.1004M16.5916 4.1004C16.5479 4.0932 16.5038 4.08695 16.4594 4.08166L16.4416 4.23061M16.5916 4.1004V4.23061H16.4416M16.5916 4.1004C18.0201 4.33532 19.1137 5.57604 19.1137 7.07024C19.1137 7.7933 18.8603 8.47798 18.3949 9.0224M16.4416 4.23061C17.86 4.39961 18.9637 5.6074 18.9637 7.07024C18.9637 7.77854 18.7081 8.4473 18.2399 8.97186M18.2399 8.97186L18.3894 8.95974C18.391 8.9791 18.3928 9.00004 18.3949 9.0224M18.2399 8.97186C18.2619 9.24267 18.3321 9.82435 18.5521 10.3412M18.2399 8.97186L18.3518 9.07175C18.3664 9.05543 18.3807 9.03898 18.3949 9.0224M18.3949 9.0224C18.4217 9.30718 18.495 9.82406 18.6901 10.2824M18.5521 10.3412L18.6901 10.2824C18.6901 10.2824 18.6901 10.2824 18.6901 10.2824M18.5521 10.3412C19.3072 12.1152 20.8786 12.126 20.9541 12.1265C20.9556 12.1265 20.9565 12.1265 20.9568 12.1265M18.5521 10.3412L18.6901 10.2824M18.6901 10.2824C19.3876 11.9211 20.8091 11.9747 20.9517 11.9766M20.9568 12.1265L20.9461 11.9769C20.948 11.9767 20.9499 11.9766 20.9517 11.9766M20.9568 12.1265L20.9632 11.9766C20.963 11.9766 20.9624 11.9766 20.9613 11.9766C20.9594 11.9766 20.9562 11.9766 20.9517 11.9766M17.4644 8.44552L17.4645 8.4454C17.8349 8.07841 18.0385 7.59037 18.0385 7.07024C18.0385 6.00246 17.1695 5.1336 16.1011 5.13335L17.4644 8.44552ZM17.4644 8.44552C17.3597 8.54953 17.3018 8.69183 17.3054 8.84009L17.3054 8.84042M17.4644 8.44552L17.3054 8.84042M17.3054 8.84042C17.3065 8.88255 17.3325 9.83717 17.7008 10.7032L17.7008 10.7033M17.3054 8.84042L17.7008 10.7033M17.7008 10.7033C18.6941 13.0379 20.8043 13.0509 20.9705 13.0512C21.2382 13.0521 21.4894 13.1565 21.6783 13.3457L21.6784 13.3458M17.7008 10.7033L21.6784 13.3458M21.6784 13.3458C21.8684 13.5358 21.9727 13.7875 21.9725 14.0559V14.056V15.0239M21.6784 13.3458L21.7845 13.2397C22.0026 13.4578 22.1227 13.7477 22.1225 14.056V15.0239H21.9725M21.9725 15.0239H21.9637C21.9332 15.0181 21.8998 15.0141 21.8641 15.0141C21.8282 15.0141 21.7949 15.0181 21.7645 15.0239H10.2299V14.056C10.2299 13.5068 10.6733 13.0586 11.2208 13.051C11.4947 13.065 13.4358 13.0706 14.4577 10.7664C14.8097 9.9733 14.8808 8.89162 14.8835 8.84804L14.8835 8.84797C14.8932 8.69457 14.8366 8.54408 14.728 8.43505C14.3645 8.06961 14.1647 7.58515 14.1647 7.06999C14.1647 6.00214 15.0335 5.13337 16.101 5.13335L21.9725 15.0239ZM13.4747 10.3305L13.4747 10.3304C13.6645 9.90313 13.753 9.32011 13.7893 9.0005C13.3362 8.45972 13.0895 7.78314 13.0895 7.07024C13.0895 5.60944 14.1353 4.39241 15.5164 4.11916V1.92522H1.92522V19.8039H15.5159V17.655H10.3944C10.099 17.655 9.8593 17.4169 9.85679 17.1218V17.1217L9.84844 16.0991H9.69179C9.39466 16.0991 9.15418 15.8582 9.15418 15.5615V14.056C9.15418 12.9088 10.0872 11.9757 11.2342 11.9757L13.4747 10.3305ZM13.4747 10.3305C12.7123 12.0498 11.3242 11.9804 11.2751 11.9774L13.4747 10.3305ZM21.3267 16.58H16.1668C16.1332 16.5725 16.0954 16.5668 16.054 16.5668C16.0126 16.5668 15.9748 16.5726 15.9414 16.58H10.9282L10.9242 16.0994H21.3267V16.58Z
                                                    M8.3521 4.8666H3.4235C3.12644 4.8666 2.88589 5.10715 2.88589 5.40421C2.88589 5.70127 3.12644 5.94182 3.4235 5.94182H8.3521C8.64916 5.94182 8.88971 5.70127 8.88971 5.40421C8.88971 5.10715 8.64916 4.8666 8.3521 4.8666Z
@@ -61,8 +65,12 @@
                                     </a>
                                 </li>
                                 <li class="nav__list-item">
-                                    <a href="#" class="nav__list-link services">
-                                        <svg width="23px" heigth="22px" viewBox="0 -31 512.00026 512" xmlns="http://www.w3.org/2000/svg"><path class="nav__list-svg" fill="4E4E4E" d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/><path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/><path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/></svg>
+                                    <a href="#" class="nav__list-link nav__list-link--active services">
+                                        <svg width="23px" heigth="22px" viewBox="0 -31 512.00026 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="nav__list-svg" fill="4E4E4E" d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/>
+                                            <path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
+                                            <path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
+                                        </svg>
                                         <span class="nav__link-txt">Дополнительные услуги</span>
                                     </a>
                                 </li>
@@ -126,8 +134,8 @@
                                         <span class="nav__link-txt">Список покупателей</span>
                                     </a>
                                 </li>
-                                <li class="nav__list-item">
-                                    <a href="#" class="nav__list-link instructions">
+                                <li class="nav__list-item nav__list-item--drop">
+                                    <button href="#" class="nav__list-link instructions">
                                         <svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="nav__list-svg" d="M18.2422 3.02824H14.2195V1.39366C14.2195 1.10086 13.9686 0.85 13.6758 0.85H7.45599C7.1632 0.85 6.91234 1.10086 6.91234 1.39366V3.02824H2.65336C1.65199 3.02824 0.85 3.83023 0.85 4.83161V24.6195C0.85 25.6209 1.65199 26.4229 2.65336 26.4229H18.2685C19.2698 26.4229 20.0718 25.6209 20.0718 24.6195V4.83161H20.0719L20.0718 4.82732C20.0433 3.83011 19.2444 3.02824 18.2422 3.02824ZM7.45599 8.41955H13.6758C13.9686 8.41955 14.2195 8.16869 14.2195 7.8759V6.32004H16.6751V22.9998H4.22053V6.34629H6.91234V7.8759C6.91234 8.20143 7.16985 8.41955 7.45599 8.41955ZM13.1321 1.93732V5.77639V7.33224H7.99965V5.77639V3.54566V1.93732H13.1321ZM18.9583 24.5932C18.9583 24.9828 18.6318 25.3093 18.2422 25.3093H2.65336C2.26382 25.3093 1.93732 24.9828 1.93732 24.5932V4.83161C1.93732 4.44206 2.26382 4.11556 2.65336 4.11556H6.91234V5.25897H3.67688C3.38408 5.25897 3.13322 5.50984 3.13322 5.80263V23.5697C3.13322 23.8625 3.38408 24.1134 3.67688 24.1134H17.2187C17.5115 24.1134 17.7624 23.8625 17.7624 23.5697V5.80263C17.7624 5.50984 17.5115 5.25897 17.2187 5.25897H14.2195V4.11556H18.2422C18.6318 4.11556 18.9583 4.44206 18.9583 4.83161V24.5932Z
                                                    M4.8915 12.7052C4.8915 12.998 5.14237 13.2488 5.43516 13.2488H15.5391C15.8319 13.2488 16.0827 12.998 16.0827 12.7052C16.0827 12.4124 15.8319 12.1615 15.5391 12.1615H5.43516C5.14237 12.1615 4.8915 12.4124 4.8915 12.7052Z
@@ -135,7 +143,20 @@
                                                    M15.5391 17.8031H5.43516C5.14237 17.8031 4.8915 18.054 4.8915 18.3468C4.8915 18.6396 5.14237 18.8904 5.43516 18.8904H15.5391C15.8319 18.8904 16.0827 18.6396 16.0827 18.3468C16.0827 18.054 15.8319 17.8031 15.5391 17.8031Z" fill="#4E4E4E" stroke="#4E4E4E" stroke-width="0.3"/>
                                         </svg>
                                         <span class="nav__link-txt">Инструкции</span>
-                                    </a>
+                                        <svg class="instructions-svg" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect class="nav__list-svg" x="13.3247" y="1.84082" width="8.81723" height="1.68818" rx="0.844088" transform="rotate(135 13.3247 1.84082)" fill="#4E4E4E" stroke="#4E4E4E" stroke-width="0.5"/>
+                                            <rect class="nav__list-svg" x="1.84009" y="0.646447" width="8.81723" height="1.68818" rx="0.844088" transform="rotate(45 1.84009 0.646447)" fill="#4E4E4E" stroke="#4E4E4E" stroke-width="0.5"/>
+                                        </svg>    
+                                    </button>
+                                    <div class="nav__drop-down drop-down" data-show="false">
+                                        <ul class="drop-down__list">
+                                            <li class="drop-down__list-item"><a class="drop-down__list-link" href="$">Советы</a></li>
+                                            <li class="drop-down__list-item"><a class="drop-down__list-link" href="$">Настройки</a></li>
+                                            <li class="drop-down__list-item"><a class="drop-down__list-link" href="$">Подменю1</a></li>
+                                            <li class="drop-down__list-item"><a class="drop-down__list-link" href="$">Подменю2</a></li>
+                                            <li class="drop-down__list-item"><a class="drop-down__list-link" href="$">Подменю3</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
                             <button class="nav__expand-btn">
@@ -161,7 +182,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div></sidebar>
         <main class="main w-100">
             <div class="container-fluid">
                 <div class="row no-gutters">
@@ -185,7 +206,8 @@
                             <div class="accordeon">
                                 <div class="row">
                                     <div class="col-12">
-                                        <h3 class="accordeon__item-title">Месяц размещения на buybuyhouse.ru, <b>без чата
+                                        <h3 class="accordeon__item-title">Месяц размещения на buybuyhouse.ru, <b>без
+                                                чата
                                                 покупателей</b></h3>
                                         <button class="accordeon__item-btn" type="button" data-bs-toggle="collapse" data-bs-target="#accordeon-item-1" aria-expanded="false" aria-controls="accordeon-item-1">Что такое чат покупателей</button>
                                         <div class="collapse multi-collapse" id="accordeon-item-1">
@@ -295,27 +317,37 @@
                                                     звонки клиентов. Если вы не поставите защиту номер, то 80-90%
                                                     звонков будут спамные.
                                                 </p>
-                                                <p>Включить фильтр звонков можно в <a href="$" class="accordeon__item-link link">разделе настройки объекта</a> в
+                                                <p>Включить фильтр звонков можно в <a href="$" class="accordeon__item-link link">разделе настройки объекта</a>
+                                                    в
                                                     Личном кабинете.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <h3 class="accordeon__item-title">Мгновенные уведомления о новых показах на просмотр</h3>
-                                        <button class="accordeon__item-btn" type="button" data-bs-toggle="collapse" data-bs-target="#accordeon-item-5" aria-expanded="false" aria-controls="accordeon-item-5">Вы не пропустите записавшихся на просмотр, наш календарь показывает свободное место для записи</button>
+                                        <h3 class="accordeon__item-title">Мгновенные уведомления о новых показах на
+                                            просмотр</h3>
+                                        <button class="accordeon__item-btn" type="button" data-bs-toggle="collapse" data-bs-target="#accordeon-item-5" aria-expanded="false" aria-controls="accordeon-item-5">Вы не пропустите записавшихся на просмотр,
+                                            наш календарь показывает свободное место для записи</button>
                                         <div class="collapse multi-collapse" id="accordeon-item-5">
                                             <div class="accordeon__item-content">
-                                                <p>Включить уведомления о просмотрах можно, добавив электронную почту в настройке профиля.</p>
+                                                <p>Включить уведомления о просмотрах можно, добавив электронную почту в
+                                                    настройке профиля.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <h3 class="accordeon__item-title">Моментальные уведомления на email о новых объектах в продаже.</h3>
-                                        <button class="accordeon__item-btn" type="button" data-bs-toggle="collapse" data-bs-target="#accordeon-item-6" aria-expanded="false" aria-controls="accordeon-item-6">Возможны ограничение по Географии. Включение услуги через администрацию BuyBuyHouse.ru. Оставьте, пожалуйста, заявку на подключение авто-мониторинга новых объектов.
-                                            Внесите данные о желаемой покупаемой новой квартире, и мы будем мониторить все новые объекты на всех площадках и уведомлять вас о появляния новых объектов.</button>
+                                        <h3 class="accordeon__item-title">Моментальные уведомления на email о новых
+                                            объектах в продаже.</h3>
+                                        <button class="accordeon__item-btn" type="button" data-bs-toggle="collapse" data-bs-target="#accordeon-item-6" aria-expanded="false" aria-controls="accordeon-item-6">Возможны ограничение по Географии.
+                                            Включение услуги через администрацию BuyBuyHouse.ru. Оставьте, пожалуйста,
+                                            заявку на подключение авто-мониторинга новых объектов.
+                                            Внесите данные о желаемой покупаемой новой квартире, и мы будем мониторить
+                                            все новые объекты на всех площадках и уведомлять вас о появляния новых
+                                            объектов.</button>
                                         <div class="collapse multi-collapse" id="accordeon-item-6">
                                             <div class="accordeon__item-content">
-                                                <p>Включить уведомления о просмотрах можно, добавив электронную почту в настройке профиля.</p>
+                                                <p>Включить уведомления о просмотрах можно, добавив электронную почту в
+                                                    настройке профиля.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -324,7 +356,9 @@
                         </div>
                         <footer class="content__footer">
                             <p class="content__footer-title">Вам доступны дополнительные платные услуги.</p>
-                            <p class="content__footer-txt">Дополнительное продвижение на сайтах Агрегаторах, таргетированная реклама, составление экспертного заключения, юридическое сопровождение эксперта (онлайн), составление авансового договора, составление договора ДКП</p>
+                            <p class="content__footer-txt">Дополнительное продвижение на сайтах Агрегаторах,
+                                таргетированная реклама, составление экспертного заключения, юридическое сопровождение
+                                эксперта (онлайн), составление авансового договора, составление договора ДКП</p>
                             <div class="mt-5">
                                 <button class="content__footer-btn paid"><span>Платные услуги</span></button>
                                 <button class="content__footer-btn tarrifs"><span>Другие тарифы</span></button>
@@ -341,35 +375,39 @@
                             <div class="col-12 d-flex justify-content-end">
                                 <div class="instruction mt-4">
                                     <p class="instruction__title">Инструкция №1</p>
-                                    <p class="instruction__txt">Краткое описание инструкции в одном-двух предложения.</p>
+                                    <p class="instruction__txt">Краткое описание инструкции в одном-двух предложения.
+                                    </p>
                                     <a href="$" class="instruction__link link"><span>Подробнее</span></a>
                                 </div>
                             </div>
                             <div class="col-12 d-flex justify-content-end">
                                 <div class="instruction mt-4">
                                     <p class="instruction__title">Инструкция №1</p>
-                                    <p class="instruction__txt">Краткое описание инструкции в одном-двух предложения.</p>
+                                    <p class="instruction__txt">Краткое описание инструкции в одном-двух предложения.
+                                    </p>
                                     <a href="$" class="instruction__link link"><span>Подробнее</span></a>
                                 </div>
                             </div>
                             <div class="col-12 d-flex justify-content-end">
                                 <div class="instruction mt-4">
                                     <p class="instruction__title">Инструкция №1</p>
-                                    <p class="instruction__txt">Краткое описание инструкции в одном-двух предложения.</p>
+                                    <p class="instruction__txt">Краткое описание инструкции в одном-двух предложения.
+                                    </p>
                                     <a href="$" class="instruction__link link"><span>Подробнее</span></a>
                                 </div>
                             </div>
                             <div class="col-12 d-flex justify-content-end">
                                 <div class="instruction mt-4">
                                     <p class="instruction__title">Инструкция №1</p>
-                                    <p class="instruction__txt">Краткое описание инструкции в одном-двух предложения.</p>
+                                    <p class="instruction__txt">Краткое описание инструкции в одном-двух предложения.
+                                    </p>
                                     <a href="$" class="instruction__link link"><span>Подробнее</span></a>
                                 </div>
                             </div>
                             <div class="col-12 d-flex justify-content-end">
-                                    <div class="instruction instruction-link mt-4">
-                                        <a href="$" class="instruction__link-all mt-4">Посмотреть все инструкции</a>
-                                    </div>
+                                <div class="instruction instruction-link mt-4">
+                                    <a href="$" class="instruction__link-all mt-4">Посмотреть все инструкции</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -377,33 +415,33 @@
             </div>
         </main>
     </section>
-    <footer class="footer">
-        <div class="container-md p-0">
-            <div class="row no-gutters">
-                <div class="col-6 col-md-9 d-flex flex-column">
-                    <p>© BuyBuyHouse, 2021</p>
-                    <ul class="footer__list">
-                        <li class="footer__list-item"><a href="$" class="footer__list-link">Контакты</a></li>
-                        <li class="footer__list-item"><a href="$" class="footer__list-link">Вакансии</a></li>
-                        <li class="footer__list-item"><a href="$" class="footer__list-link">Правила пользования
-                                сайтом</a></li>
-                        <li class="footer__list-item"><a href="$" class="footer__list-link">Политика
-                                конфиденциальности</a></li>
-                    </ul>
-                    <p class="footer__license">При использовании материалов гиперссылка обязательна.</p>
-                </div>
-                <div class="col-6 col-md-3 d-flex justify-content-around">
-                    <ul class="social-list d-flex align-items-center align-items-sm-start">
-                        <li class="social-list__item"><a href="$" class="social-list__link vk"></a></li>
-                        <li class="social-list__item"><a href="$" class="social-list__link facebook"></a></li>
-                        <li class="social-list__item"><a href="$" class="social-list__link youtube"></a></li>
-                    </ul>
-                </div>
+    <mainfooter><footer class="footer">
+    <div class="container-md">
+        <div class="row no-gutters">
+            <div class="col-6 col-md-9 d-flex flex-column">
+                <p>© BuyBuyHouse, 2021</p>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="$" class="footer__list-link">Контакты</a></li>
+                    <li class="footer__list-item"><a href="$" class="footer__list-link">Вакансии</a></li>
+                    <li class="footer__list-item"><a href="$" class="footer__list-link">Правила пользования
+                            сайтом</a></li>
+                    <li class="footer__list-item"><a href="$" class="footer__list-link">Политика
+                            конфиденциальности</a></li>
+                </ul>
+                <p class="footer__license">При использовании материалов гиперссылка обязательна.</p>
+            </div>
+            <div class="col-6 col-md-3 d-flex justify-content-around">
+                <ul class="social-list d-flex align-items-center align-items-sm-start">
+                    <li class="social-list__item"><a href="$" class="social-list__link vk"></a></li>
+                    <li class="social-list__item"><a href="$" class="social-list__link facebook"></a></li>
+                    <li class="social-list__item"><a href="$" class="social-list__link youtube"></a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+</footer></mainfooter>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-<script type="text/javascript" src="./js/bundle.js"></script></body>
+<script src="./js/bundle.js"></script></body>
 
 </html>
